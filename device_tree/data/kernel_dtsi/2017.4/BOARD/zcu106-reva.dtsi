@@ -2,6 +2,10 @@
 	model = "ZynqMP ZCU106 RevA";
 	compatible = "xlnx,zynqmp-zcu106-revA", "xlnx,zynqmp-zcu106", "xlnx,zynqmp";
 
+       chosen {
+	       bootargs = "cma=1500m";
+       };
+
 	gpio-keys {
 		compatible = "gpio-keys";
 		#address-cells = <1>;
